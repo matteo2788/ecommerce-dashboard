@@ -24,7 +24,7 @@ function Breakdown({ perPair = false }) {
       <span className="balance-segment" style={{ width: `${balance / total * 100}%` }} />
     </div>
     <div className="chart-labels"><span>Product cost</span><span>After product cost</span></div>
-    <div className="breakdown-row"><span><i className="dot purple" />Product cost</span><strong>{perPair ? '' : '≈'}{money(cost)}</strong></div>
+    <div className="breakdown-row"><span><i className="dot purple" />Product cost</span><strong>≈{money(cost)}</strong></div>
     <div className="breakdown-row"><span><i className="dot lime" />After product cost</span><strong>≈{money(balance)}</strong></div>
   </>;
 }
